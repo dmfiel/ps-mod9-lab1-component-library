@@ -6,7 +6,7 @@ export function ProductDisplayTest() {
     name: 'Wireless Headphones',
     price: 199.99,
     description: 'High-quality wireless headphones with noise cancellation.',
-    imageUrl: 'https://example.com/headphones.jpg',
+    imageUrl: '/src/assets/headphones.png',
     inStock: true
   };
   const product2 = {

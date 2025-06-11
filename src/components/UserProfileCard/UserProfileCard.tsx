@@ -17,11 +17,9 @@ export function UserProfileCard({
   return (
     <article className="border border-gray-300 shadow-md rounded-lg items-center m-5 p-5 bg-gray-50 w-fit mx-auto">
       <div className="flex gap-5">
-        <img
-          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.tR2Umw6O108_1cjdtEOb8QHaHT%3Fpid%3DApi&f=1&ipt=fbac7ec93521c3603bcff925465af286960dd4d965181dfb0295a5f534b19bfa&ipo=images"
-          height="100px"
-          width="100px"
-        />
+        {user.avatarUrl && (
+          <img src={user.avatarUrl} height="100px" width="100px" />
+        )}
         <div className="text-center m-auto">
           <h2 className="text-xl font-bold mb-3">{user.name}</h2>
           <h3 className="text-lg font-medium">{showEmail ? user.email : ''}</h3>

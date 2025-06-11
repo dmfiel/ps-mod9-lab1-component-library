@@ -16,12 +16,14 @@ export function ProductDisplay({
 }: ProductDisplayProps) {
   return (
     <article className="border border-gray-300 shadow-md rounded-lg items-center m-0 p-0 bg-white w-fit">
-      <img
-        src="/src/assets/headphones.png"
-        height="50px"
-        width="100%"
-        className="w-full m-0 p-0 rounded-t-lg"
-      />
+      {product.imageUrl && (
+        <img
+          src={product.imageUrl}
+          height="50px"
+          width="100%"
+          className="w-full m-0 p-0 rounded-t-lg"
+        />
+      )}
       <div className="text-center p-5">
         <h2 className="text-xl font-bold mb-3">{product.name}</h2>
         <h2 className="text-xl font-bold mb-3 text-blue-500">

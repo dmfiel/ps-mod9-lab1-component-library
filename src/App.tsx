@@ -14,14 +14,15 @@ function App() {
     name: 'John Doe',
     email: 'john.doe@example.com',
     role: 'Software Engineer',
-    avatarUrl: 'https://example.com/avatar.jpg'
+    avatarUrl:
+      'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.tR2Umw6O108_1cjdtEOb8QHaHT%3Fpid%3DApi&f=1&ipt=fbac7ec93521c3603bcff925465af286960dd4d965181dfb0295a5f534b19bfa&ipo=images'
   };
   const product = {
     id: '1',
     name: 'Wireless Headphones',
     price: 199.99,
     description: 'High-quality wireless headphones with noise cancellation.',
-    imageUrl: 'https://example.com/headphones.jpg',
+    imageUrl: '/src/assets/headphones.png',
     inStock: true
   };
 
